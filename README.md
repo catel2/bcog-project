@@ -1,1 +1,0 @@
-# bcog-project
