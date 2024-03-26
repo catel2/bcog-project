@@ -1,0 +1,36 @@
+'''
+Welcome to BeatRun! This program aims to help combine runners' music preferences, height, and speed they want to run and match those to songs from our database. 
+BeatRun will make a playlist with songs that fit based on the user criteria and songs' beats per minute (BPM). 
+'''
+
+'''
+Functions:
+1. read_csv(file_path):
+  Description: Reads the dataframe with the song data into the program.
+  Arguments: file_path, which will be a path to the song data file
+
+2. user_input():
+  Description: Greets/instructs the user and then takes their music genre preference / height / speed information and returns it to the main function.
+  Arguments: N/A
+
+3. data_filter(genre, height, speed, song_df):
+  Description: Filters through the data frame and selects the songs that fit each user constraint. Returns a list of these songs to the main function.
+  Arguments: genre/height/speed from the user_input() function and the song dataframe
+
+4. final_playlist(songs):
+  Description: Returns the final list of songs from the data_filter() function back to the user with the song and artist name.
+  Arguments: Song list from the data_filter() function
+
+5. main():
+  Description: Executes all of the functions
+  Arguments: N/A
+'''
+    
+'''
+Example of Using These Functions:
+Eve is a runner who likes country music, is 5'8", and wants to run at 6.3 mph.
+BeatRun would load the song_df into read_csv() first to prepare the program. Then, user_input() would say hi to Eve and instruct her on how to 
+respond to the following prompts. Eve would select country as her genre, 68 inches as her height, and 6.3 as the mph. 
+user_input() would return that to the main function. data_filter() then would iterate through the song dataframe and use a conditional to select the 
+songs that match Eve's inputs. final_playlist() would take these songs and list to Eve songs like "Dirt on my boots" by Jon Pardi and others from the
+song list. The program would end here. 
