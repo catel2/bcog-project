@@ -14,12 +14,12 @@ Functions:
   Arguments: N/A
 
 3. data_filter(genre, height, speed, song_df):
-  Description: Filters through the data frame and selects the songs that fit each user constraint. Returns a list of these songs to the main function.
+  Description: Filters through the data frame and selects the songs that fit each user constraint. Returns a dataframe of these songs to the main function.
   Arguments: genre/height/speed from the user_input() function and the song dataframe
 
-4. final_playlist(songs):
+4. final_playlist(playlist_df):
   Description: Returns the final list of songs from the data_filter() function back to the user with the song and artist name.
-  Arguments: Song list from the data_filter() function
+  Arguments: playlist dataframe from the data_filter() function
 
 5. main():
   Description: Executes all of the functions
