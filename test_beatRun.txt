@@ -1,0 +1,13 @@
+Reagan likes pop music and wants to run with a playlist that matches her speed.
+
+BeatRun would first greet Reagan saying "Welcome to BeatRun! This program aims to help combine runners' music preferences, height, and speed they want to run and match those to songs from our database. 
+BeatRun will make a playlist with songs that fit based on the user criteria and songs' beats per minute (BPM)."
+
+Reagan would then be prompted to input her genre of choice (where she would type "pop"), her height (where she would type 64 because she is 64 inches tall), and her speed preference (where she would type 5.4 for 5.4 mph). 
+
+Reagan would receive a list of songs that match these requirements back formatted as such:
+Here's your playlist!
+Side to Side by Ariana Grande
+brutal by Olivia Rodrigo
+I Knew You Were Trouble by Taylor Swift
+(and so on) 
