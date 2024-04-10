@@ -40,7 +40,7 @@ def final_playlist(playlist_df):
     print(title, "by", artist)
 
 def main():
-  #song_path = "DATA FRAME PATH HERE"
+  song_path = "/Users/catelepinskas/Downloads/bcog200/final/music.csv"
   songs_df = read_csv(song_path)
 
   genre, height, speed = user_input()
