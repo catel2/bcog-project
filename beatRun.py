@@ -14,13 +14,13 @@ def user_input():
     continue
   else:
     print("Invalid genre. Please input one from the genre options")
-    genre = input(Please select one of the following music genres: [GENRE OPTIONS]")
+    genre = input("Please select one of the following music genres: [GENRE OPTIONS]")
   
   height = input("Please input your height in inches.")
   #if statement here to check if user input a valid response; if not, redo the input statement
   #what should the if statement look like?
 
-  speed = input("Please the speed you want to run in miles per hour \(ex. 6.3\)")
+  speed = input("Please the speed you want to run in miles per hour (ex. 6.3)")
   #if statement here to check if user input a valid response; if not, redo the input statement
 
   return genre, height, speed
