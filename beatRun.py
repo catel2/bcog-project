@@ -16,22 +16,22 @@ def user_input():
     print("Invalid genre. Please input one from the genre options.")
     genre = input("Please select one of the following music genres: pop, rock, country, R&B, Dance/Electronic, hip hop, metal, Folk/Acoustic, latin, easy listening, blues, World/Traditional")
   
-  height = input("Please input your height in inches.")
+  stride = input("Please input your stride length in feet.")
   #if statement here to check if user input a valid response; if not, redo the input statement
   #what should the if statement look like?
 
   speed = input("Please the speed you want to run in miles per hour (ex. 6.3)")
   #if statement here to check if user input a valid response; if not, redo the input statement
 
-  return genre, height, speed
+  return genre, stride, speed
 
-def data_filter(genre, height, speed, song_df):
-  #converting height/speed input into useable figure for dataset
-  #would use if statements/math here likely 
-  #beats = ___ 
+def data_filter(genre, stride, speed, song_df):
+  #converting stride/speed input into useable figure for dataset
+  #formula: mph = (bpm * stride * 60) / 5280
+  beats = ((speed * 5280) / 60) / stride
   
-  #conditionals to filter songs_df to only the songs that fit the requirements of the user
-  playlist_df = songs_df[(songs_df.genre == genre) & (songs_df.beats == beats)]
+  #conditionals to filter songs_df to only the songs that closely fit the requirements of the user
+  playlist_df = songs_df[(songs_df.genre.str.contains(genre)) & ((songs_df.beats >= (beats-10) & (songs_df.beats <= (beats+10))]
 
   return playlist_df
 
