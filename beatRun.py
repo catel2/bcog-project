@@ -49,9 +49,9 @@ def main():
   song_path = "/Users/catelepinskas/Downloads/songs_normalize.csv"
   songs_df = read_csv(song_path)
 
-  genre, height, speed = user_input()
+  genre, stride, speed = user_input()
   
-  playlist_df = data_filter(genre, height, speed)
+  playlist_df = data_filter(genre, stride, speed)
   
   output = final_playlist(playlist_df)
 
