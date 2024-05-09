@@ -55,7 +55,7 @@ def main():
 
   genre, stride, speed = user_input()
   
-  playlist_df = data_filter(genre, stride, speed)
+  playlist_df = data_filter(genre, stride, speed, songs_df)
   
   output = final_playlist(playlist_df)
 
