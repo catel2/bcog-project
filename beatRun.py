@@ -21,11 +21,11 @@ def user_input():
   
   stride = input("Please input your stride length in feet (ex. 2.5).")
   #converting to float
-  stride = flt(stride)
+  stride = float(stride)
 
   speed = input("Please the speed you want to run in miles per hour (ex. 6.3)")
   #converting to float
-  speed = flt(speed)
+  speed = float(speed)
 
   return genre, stride, speed
 
