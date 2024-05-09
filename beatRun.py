@@ -7,10 +7,12 @@ def read_csv(file_path):
 def user_input():
   #greet user first with print statement
   print("Hello! Welcome to BeatRun. This program aims to help combine runners' music preferences, stride length, and speed they want to run and match those to songs from our database.BeatRun will make a playlist with songs that fit based on the user criteria and songs' beats per minute \(BPM\).")
-  
+
+  #have user input genre of choice
   genre_list = ["pop", "rock", "country", "R&B", "Dance/Electronic", "hip hop", "metal", "Folk/Acoustic", "latin", "easy listening", "blues", "World/Traditional"]
   genre = input("Please select one of the following music genres: pop, rock, country, R&B, Dance/Electronic, hip hop, metal, Folk/Acoustic, latin, easy listening, blues, World/Traditional")
-  #if statement here to check if user input a valid response; if not, redo the input statement
+  
+  #while statement here to check if user input a valid response; if not, redo the input statement
   while True:
     if genre.lower() in genre_list:
       break
@@ -18,11 +20,12 @@ def user_input():
       print("Invalid genre. Please input one from the genre options.")
   
   stride = input("Please input your stride length in feet (ex. 2.5).")
-  #if statement here to check if user input a valid response; if not, redo the input statement
-  #what should the if statement look like?
+  #converting to float
+  stride = flt(stride)
 
   speed = input("Please the speed you want to run in miles per hour (ex. 6.3)")
-  #if statement here to check if user input a valid response; if not, redo the input statement
+  #converting to float
+  speed = flt(speed)
 
   return genre, stride, speed
 
