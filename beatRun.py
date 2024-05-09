@@ -7,7 +7,8 @@ def read_csv(file_path):
 def user_input():
   #greet user first with print statement
   print("Hello! Welcome to BeatRun. This program aims to help combine runners' music preferences, stride length, and speed they want to run and match those to songs from our database.BeatRun will make a playlist with songs that fit based on the user criteria and songs' beats per minute \(BPM\).")
-
+  
+  genre_list = ["pop", "rock", "country", "R&B", "Dance/Electronic", "hip hop", "metal", "Folk/Acoustic", "latin", "easy listening", "blues", "World/Traditional"]
   genre = input("Please select one of the following music genres: pop, rock, country, R&B, Dance/Electronic, hip hop, metal, Folk/Acoustic, latin, easy listening, blues, World/Traditional")
   #if statement here to check if user input a valid response; if not, redo the input statement
   if genre in genre_list:
