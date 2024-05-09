@@ -11,11 +11,11 @@ def user_input():
   genre_list = ["pop", "rock", "country", "R&B", "Dance/Electronic", "hip hop", "metal", "Folk/Acoustic", "latin", "easy listening", "blues", "World/Traditional"]
   genre = input("Please select one of the following music genres: pop, rock, country, R&B, Dance/Electronic, hip hop, metal, Folk/Acoustic, latin, easy listening, blues, World/Traditional")
   #if statement here to check if user input a valid response; if not, redo the input statement
-  if genre in genre_list:
-    continue
-  else:
-    print("Invalid genre. Please input one from the genre options.")
-    genre = input("Please select one of the following music genres: pop, rock, country, R&B, Dance/Electronic, hip hop, metal, Folk/Acoustic, latin, easy listening, blues, World/Traditional")
+  while True:
+    if genre.lower() in genre_list:
+      break
+    else:
+      print("Invalid genre. Please input one from the genre options.")
   
   stride = input("Please input your stride length in feet (ex. 2.5).")
   #if statement here to check if user input a valid response; if not, redo the input statement
