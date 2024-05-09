@@ -14,10 +14,11 @@ def user_input():
   
   #while statement here to check if user input a valid response; if not, redo the input statement
   while True:
-    if genre.lower() in genre_list:
+    if genre in genre_list:
       break
     else:
       print("Invalid genre. Please input one from the genre options.")
+      genre = input("Please select one of the following music genres: pop, rock, country, R&B, Dance/Electronic, hip hop, metal, Folk/Acoustic, latin, easy listening, blues, World/Traditional")
   
   stride = input("Please input your stride length in feet (ex. 2.5).")
   #converting to float
