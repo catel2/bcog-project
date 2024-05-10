@@ -54,6 +54,19 @@ def final_playlist(playlist_df):
   else:
     print("Sorry! Your criteria did not produce any matching songs. You can try again with a different speed or genre if you'd like!")
 
+def playlist_stats(playlist_df):
+  popularity = playlist_df.popularity.mean()
+
+  danceability = playlist_df.danceability.mean()
+
+  energy = playlist_df.energy.mean()
+
+  loudness = playlist_df.loudness.mean()
+
+  tempo = playlist_df.tempo.mean()
+
+  print(f"The mean popularity of your playlist is {popularity:0.2f}. The mean danceability is {danceability:0.2f}, the mean energy is {energy:0.2f}, and the mean loudness is {loudness:0.2f}. If you want to find more songs that fit your speed/stride, the mean tempo is {tempo:0.2f} BPM. Thanks for using BeatRun!")
+
 def main():
   song_path = "~/Downloads/songs_normalize.csv"
   songs_df = read_csv(song_path)
@@ -63,6 +76,8 @@ def main():
   playlist_df = data_filter(genre, stride, speed, songs_df)
   
   output = final_playlist(playlist_df)
+
+  playlist_stats(playlist_df)
 
 if __name__ == "__main__":
   main()
