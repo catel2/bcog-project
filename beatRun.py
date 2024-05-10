@@ -36,7 +36,7 @@ def data_filter(genre, stride, speed, song_df):
   beats = ((speed * 5280) / 60) / stride
   
   #conditionals to filter songs_df to only the songs that closely fit the requirements of the user
-  playlist_df = song_df[(song_df.genre.str.contains(genre)) & (song_df.tempo >= (beats-20)) & (song_df.tempo <= (beats+20))]
+  playlist_df = song_df[(song_df.genre.str.contains(genre)) & (song_df.tempo >= (beats-15)) & (song_df.tempo <= (beats+15))]
 
   return playlist_df
 
