@@ -41,14 +41,18 @@ def data_filter(genre, stride, speed, song_df):
   return playlist_df
 
 def final_playlist(playlist_df):
-  #introduce data 
-  print("Here's your playlist!")
+  #check if the playlist has any songs to present
+  if len(playlist_df) > 0:
+    #introduce data 
+    print("Here's your playlist!")
   
-  #iterate through filtered data frame and print the song name/artist for each song
-  for i in range(len(playlist_df)):
-    title = playlist_df.song.iloc[i]
-    artist = playlist_df.artist.iloc[i]
-    print(title, "by", artist)
+    #iterate through filtered data frame and print the song name/artist for each song
+    for i in range(len(playlist_df)):
+      title = playlist_df.song.iloc[i]
+      artist = playlist_df.artist.iloc[i]
+      print(title, "by", artist)
+  else:
+    print("Sorry! Your criteria did not produce any matching songs. You can try again with a different speed or genre if you'd like!")
 
 def main():
   song_path = "~/Downloads/songs_normalize.csv"
