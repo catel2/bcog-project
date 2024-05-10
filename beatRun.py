@@ -46,7 +46,7 @@ def final_playlist(playlist_df):
   
   #iterate through filtered data frame and print the song name/artist for each song
   for i in range(len(playlist_df)):
-    title = playlist_df.title[i]
+    title = playlist_df.song[i]
     artist = playlist_df.artist[i]
     print(title, "by", artist)
 
