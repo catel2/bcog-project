@@ -36,7 +36,7 @@ def data_filter(genre, stride, speed, song_df):
   beats = ((speed * 5280) / 60) / stride
   
   #conditionals to filter songs_df to only the songs that closely fit the requirements of the user
-  playlist_df = song_df[(song_df.genre.str.contains(genre)) & (song_df.tempo >= (beats-10)) & (song_df.tempo <= (beats+10))]
+  playlist_df = song_df[(song_df.genre.str.contains(genre)) & (song_df.tempo >= (beats-20)) & (song_df.tempo <= (beats+20))]
 
   return playlist_df
 
@@ -46,8 +46,8 @@ def final_playlist(playlist_df):
   
   #iterate through filtered data frame and print the song name/artist for each song
   for i in range(len(playlist_df)):
-    title = playlist_df.song[i]
-    artist = playlist_df.artist[i]
+    title = playlist_df.song.iloc[i]
+    artist = playlist_df.artist.iloc[i]
     print(title, "by", artist)
 
 def main():
