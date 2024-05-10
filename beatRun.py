@@ -20,7 +20,7 @@ def user_input():
       print("Invalid genre. Please input one from the genre options.")
       genre = input("Please select one of the following music genres: pop, rock, country, R&B, Dance/Electronic, hip hop, metal, Folk/Acoustic, latin, easy listening, blues, World/Traditional")
   
-  stride = input("Please input your stride length in feet (ex. 2.5).")
+  stride = input("Please input your stride length in feet (ex. 3.5).")
   #converting to float
   stride = float(stride)
 
