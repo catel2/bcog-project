@@ -65,7 +65,10 @@ def playlist_stats(playlist_df):
 
   tempo = playlist_df.tempo.mean()
 
-  print(f"The mean popularity of your playlist is {popularity:0.2f}. The mean danceability is {danceability:0.2f}, the mean energy is {energy:0.2f}, and the mean loudness is {loudness:0.2f}. If you want to find more songs that fit your speed/stride, the mean tempo is {tempo:0.2f} BPM. Thanks for using BeatRun!")
+  if len(playlist_df) > 0:
+    print(f"The mean popularity of your playlist is {popularity:0.2f}. The mean danceability is {danceability:0.2f}, the mean energy is {energy:0.2f}, and the mean loudness is {loudness:0.2f}. If you want to find more songs that fit your speed/stride, the mean tempo is {tempo:0.2f} BPM. Thanks for using BeatRun!")
+  else:
+    print("")
 
 def main():
   song_path = "~/Downloads/songs_normalize.csv"
