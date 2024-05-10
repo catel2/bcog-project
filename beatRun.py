@@ -51,7 +51,7 @@ def final_playlist(playlist_df):
     print(title, "by", artist)
 
 def main():
-  song_path = "/Users/catelepinskas/Downloads/songs_normalize.csv"
+  song_path = "~/Downloads/songs_normalize.csv"
   songs_df = read_csv(song_path)
 
   genre, stride, speed = user_input()
