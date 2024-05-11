@@ -17,7 +17,7 @@ def test_read_csv():
   songs_df = read_csv("~/Downloads/songs_normalize.csv")
   assert isinstance(songs_df, pd.DataFrame) #check
 
-def test_user_input(monkeypathc):
+def test_user_input(monkeypatch):
   #testing user_input
   #mocking user input with monkeypatch
   mock_input_values = ['hip hop', '3.5', '6.3']
