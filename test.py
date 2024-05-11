@@ -1,6 +1,6 @@
 import pytest
 import pandas as pd
-from your_script import read_csv, user_input, data_filter, final_playlist
+from beatRun.py import read_csv, user_input, data_filter, final_playlist
 
 def sample_songs_df():
   #making sample df to test
