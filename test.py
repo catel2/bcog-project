@@ -39,7 +39,7 @@ def test_data_filter(sample_songs_df):
 def test_final_playlist(capsys):
   #testing final_playlist
   sample_playlist_df = pd.DataFrame({
-    'title': ['Song 1', 'Song 2'],
+    'song': ['Song 1', 'Song 2'],
     'artist': ['Artist 1', 'Artist 2']})
   final_playlist(sample_playlist_df)
   captured = capsys.readouterr()
