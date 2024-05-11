@@ -2,6 +2,7 @@ import pytest
 import pandas as pd
 from beatRun import read_csv, user_input, data_filter, final_playlist
 
+@pytest.fixture
 def sample_songs_df():
   #making sample df to test
   sample_data = {'title':['Song 1', 'Song 2', 'Song 3'], 
