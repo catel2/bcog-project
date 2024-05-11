@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 
 def read_csv(file_path):
   songs_df = pd.read_csv(file_path)
@@ -65,8 +66,19 @@ def playlist_stats(playlist_df):
 
   tempo = playlist_df.tempo.mean()
 
+  stats_list = ["popularity", "danceability", "energy", "loudness"]
+  avg_stats = [popularity, danceability, energy, loudness]
+
+  #checking if there are songs in playlist, printing nothing if 0 songs
   if len(playlist_df) > 0:
     print(f"The mean popularity of your playlist is {popularity:0.2f}. The mean danceability is {danceability:0.2f}, the mean energy is {energy:0.2f}, and the mean loudness is {loudness:0.2f}. If you want to find more songs that fit your speed/stride, the mean tempo is {tempo:0.2f} BPM. Thanks for using BeatRun!")
+    
+    #plotting characteristic stats visually
+    plt.bar(stats_list, avg_stats)
+    plt.xlabel('Song Characteristics')
+    plt.ylabel('Averages')
+    plt.title('Averages of Characteristics of Songs in Your Playlist')
+    plt.show()
   else:
     print("")
 
