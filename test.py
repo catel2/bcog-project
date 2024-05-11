@@ -5,7 +5,7 @@ from beatRun import read_csv, user_input, data_filter, final_playlist
 @pytest.fixture
 def sample_songs_df():
   #making sample df to test
-  sample_data = {'title':['Song 1', 'Song 2', 'Song 3'], 
+  sample_data = {'song':['Song 1', 'Song 2', 'Song 3'], 
                  'artist':['Artist 1', 'Artist 2', 'Artist 3'],
                  'genre':['rock', 'pop', 'hip hop'],
                  'tempo':[120, 140, 160]}
