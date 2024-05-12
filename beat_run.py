@@ -59,14 +59,12 @@ def playlist_stats(playlist_df):
   #taking averages of interesting stats from playlist dataframe and 
   #turning them into visually represented data to add to user experience
   popularity = playlist_df.popularity.mean()
-
-  danceability = playlist_df.danceability.mean()
-
-  energy = playlist_df.energy.mean()
-
-  loudness = playlist_df.loudness.mean()
-
   tempo = playlist_df.tempo.mean()
+
+  #these measures are multiplied to put them on the same scale (out of 100) as popularity so bar plot is cleaner
+  danceability = playlist_df.danceability.mean() * 100
+  energy = playlist_df.energy.mean() * 100
+  loudness = playlist_df.loudness.mean() * -10
 
   #setting up x and y axes for bar plot
   stats_list = ["popularity", "danceability", "energy", "loudness"]
