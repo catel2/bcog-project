@@ -15,6 +15,6 @@ Out Of Reach by Gabrielle
 (and so on) 
 
 Reagan would also receive a print statement that said the following:
-The mean popularity of your playlist is 56.95. The mean danceability is 0.54, the mean energy is 0.69, and the mean loudness is -5.39. If you want to find more songs that fit your speed/stride, the mean tempo is 186.03 BPM. Thanks for using BeatRun!
+The mean popularity of your playlist is 56.95. The mean danceability is 53.50, the mean energy is 69.23, and the mean loudness is 53.91. If you want to find more songs that fit your speed/stride, the mean tempo is 186.03 BPM. Thanks for using BeatRun!
 
 A bar plot that showed the mean popularity, danceability, energy, and loudness would also pop up. 
