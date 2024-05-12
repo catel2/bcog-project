@@ -7,12 +7,14 @@ Reagan would then be prompted to input her genre of choice (where she would type
 
 Reagan would receive a list of songs that match these requirements back formatted as such:
 Here's your playlist!
-Side to Side by Ariana Grande
-brutal by Olivia Rodrigo
-I Knew You Were Trouble by Taylor Swift
+Party Up by DMX
+Get Ur Freak On by Missy Elliott
+Peaches & Cream by 112
+Turn Off The Light by Nelly Furtado
+Out Of Reach by Gabrielle
 (and so on) 
 
 Reagan would also receive a print statement that said the following:
-The mean popularity of your playlist is 65. The mean danceability is 82, the mean energy is 40, and the mean loudness is 32. If you want to find more songs that fit your speed/stride, the mean tempo is 145 BPM. Thanks for using BeatRun!
+The mean popularity of your playlist is 56.95. The mean danceability is 0.54, the mean energy is 0.69, and the mean loudness is -5.39. If you want to find more songs that fit your speed/stride, the mean tempo is 186.03 BPM. Thanks for using BeatRun!
 
 A bar plot that showed the mean popularity, danceability, energy, and loudness would also pop up. 
