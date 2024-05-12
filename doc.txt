@@ -18,10 +18,14 @@ Functions:
   Arguments: genre/stride/speed from the user_input() function and the song dataframe
 
 4. final_playlist(playlist_df):
-  Description: Returns the final list of songs from the data_filter() function back to the user with the song and artist name.
+  Description: Returns the final list of songs from the data_filter() function back to the user with the song and artist name. If there are no matching songs to put in the playlist, tells the user to try and change the speed or genre inputs next time to see if relevant songs will come up.
   Arguments: playlist dataframe from the data_filter() function
 
-5. main():
+5. playlist_stats(playlist_df):
+  Description: Calculates the average popularity, danceability, energy, loudness, and tempo of the playlist. Returns this information in a print statement as well as visually showing the first four characteristics in a bar plot. If there are no songs in the playlist, returns nothing.
+  Arguments: playlist dataframe from the data_filter() function
+
+6. main():
   Description: Executes all of the functions
   Arguments: N/A
 '''
