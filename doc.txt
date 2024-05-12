@@ -33,4 +33,6 @@ BeatRun would load the song_df into read_csv() first to prepare the program. The
 respond to the following prompts. Eve would select country as her genre, 3.0 ft as her stride, and 6.3 as the mph. 
 user_input() would return that to the main function. data_filter() then would iterate through the song dataframe and use a conditional to select the 
 songs that match Eve's inputs. final_playlist() would take these songs and list to Eve songs like "Dirt on my Boots" by Jon Pardi and others from the
-song list. playlist_stats would calculate the average popularity, danceability, energy, loudness, and tempo of Eve's playlist and represent it to Eve in a print statement and a bar plot. The program would end here. 
+song list. playlist_stats would calculate the average popularity, danceability, 
+energy, loudness, and tempo of Eve's playlist and represent it to Eve in a print statement and a bar plot. 
+The program would end here. 
