@@ -15,7 +15,7 @@ def sample_songs_df():
 
 def test_read_csv():
   #testing read_csv
-  songs_df = read_csv("~/Downloads/test_songs_normalize.csv")
+  songs_df = read_csv("tests/test_songs_normalize.csv")
   assert isinstance(songs_df, pd.DataFrame)
 
 def test_user_input(monkeypatch):
