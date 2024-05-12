@@ -56,6 +56,8 @@ def final_playlist(playlist_df):
     print("Sorry! Your criteria did not produce any matching songs. You can try again with a different speed or genre if you'd like!")
 
 def playlist_stats(playlist_df):
+  #taking averages of interesting stats from playlist dataframe and 
+  #turning them into visually represented data to add to user experience
   popularity = playlist_df.popularity.mean()
 
   danceability = playlist_df.danceability.mean()
@@ -66,6 +68,7 @@ def playlist_stats(playlist_df):
 
   tempo = playlist_df.tempo.mean()
 
+  #setting up x and y axes for bar plot
   stats_list = ["popularity", "danceability", "energy", "loudness"]
   avg_stats = [popularity, danceability, energy, loudness]
 
